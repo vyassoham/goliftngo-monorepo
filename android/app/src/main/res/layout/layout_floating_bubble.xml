@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bubble_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <!-- Main Circular Floating Bubble -->
+    <FrameLayout
+        android:id="@+id/bubble_container"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bubble_circle_background"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/bubble_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            android:contentDescription="LiftnGo Floating Button" />
+    </FrameLayout>
+
+    <!-- Close 'X' Button on Top-Right -->
+    <ImageView
+        android:id="@+id/bubble_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bubble_close_background"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:padding="4dp"
+        android:contentDescription="Close Floating Button" />
+
+</FrameLayout>
